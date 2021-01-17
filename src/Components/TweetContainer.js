@@ -2,7 +2,6 @@ import React from "react";
 import Comment from "./Comment";
 
 class TweetContainer extends React.Component {
-    
      constructor(props) {
         super(props);
 
@@ -22,10 +21,8 @@ class TweetContainer extends React.Component {
     
     handleSubmit (event) {
         event.preventDefault();
-        // using event.target.value did not work. I dont know why. be good to try!!!
         if(this.state.comment === '' || this.state.comment == null){ return; }  
         var newComment = <Comment key={this.state.id} comment={this.state.comment}/>
-        // why am I slicing here agian?
         var newComments = this.state.commentsList.slice();
 
         newComments.push(newComment)

@@ -13,9 +13,7 @@ function App() {
   return (
 
     <div style={divstyle}>
-      <TweetContainer status="Stop COVID-19, Take-out Only!" />
-      <TweetContainer status="At home watching Youtube"/>
-      <TweetContainer status="I need sleep now" />
+      <TweetContainer status="My tweets" />
     </div>
   );
 }
