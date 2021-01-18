@@ -15,7 +15,7 @@ class LikeButton extends React.Component {
     render() { 
         return ( 
             <>
-            {` `}<button onClick={this.handleClick}>Like</button> {this.state.counter} Likes
+            {` `}<button onClick={this.handleClick}>Like!</button> {this.state.counter} Likes
             </>
          );
     }
